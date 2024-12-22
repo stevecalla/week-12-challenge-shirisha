@@ -1,6 +1,5 @@
-import React, { useState } from 'react';
-import './Header.css'; // Assuming you have some CSS for styling
-
+import { useState } from 'react';
+//import coverImage from '../../assets/cover/cover-image.jpg';
 const Header = () => {
     const [activeSection, setActiveSection] = useState('About Me');
 
@@ -15,25 +14,25 @@ const Header = () => {
                 <ul>
                     <li 
                         className={activeSection === 'About Me' ? 'active' : ''} 
-                        onClick={() => handleNavClick('About Me')}
+                        // onClick={() => handleNavClick('About Me')}
                     >
-                        About Me
+                        <a href="/">About Me</a>
                     </li>
                     <li 
                         className={activeSection === 'Portfolio' ? 'active' : ''} 
-                        onClick={() => handleNavClick('Portfolio')}
+                        // onClick={() => handleNavClick('Portfolio')}
                     >
-                        Portfolio
+                        <a href="/portfolio">Portfolio</a>
                     </li>
                     <li 
                         className={activeSection === 'Contact' ? 'active' : ''} 
-                        onClick={() => handleNavClick('Contact')}
+                        // onClick={() => handleNavClick('Contact')}
                     >
                         Contact
                     </li>
                     <li 
                         className={activeSection === 'Resume' ? 'active' : ''} 
-                        onClick={() => handleNavClick('Resume')}
+                        // onClick={() => handleNavClick('Resume')}
                     >
                         Resume
                     </li>

@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
+import { validateEmail } from '../../utils/helpers';
 
 const Contact = () => {
     const [formData, setFormData] = useState({
@@ -26,7 +27,7 @@ const Contact = () => {
         let error = '';
         if (!value) {
             error = 'This field is required';
-        } else if (name === 'email' && !/\S+@\S+\.\S+/.test(value)) {
+        } else if (name === 'email' && !validateEmail(value)) {
             error = 'Invalid email address';
         }
         setErrors({
@@ -37,7 +38,21 @@ const Contact = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        // Handle form submission
+        // Perform final validation
+        const finalErrors = {};
+        Object.keys(formData).forEach((key) => {
+            if (!formData[key]) {
+                finalErrors[key] = 'This field is required';
+            } else if (key === 'email' && !validateEmail(formData[key])) {
+                finalErrors[key] = 'Invalid email address';
+            }
+        });
+        setErrors(finalErrors);
+
+        if (Object.keys(finalErrors).length === 0) {
+            console.log('Form submitted:', formData);
+            // Handle form submission logic here
+        }
     };
 
     return (
