@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import './Header.css';
+//import './Header.css';
 
 const Header = () => {
     const [activeSection, setActiveSection] = useState('About Me');
@@ -9,7 +9,7 @@ const Header = () => {
     };
 
     return (
-        <header>
+        <header className="flex-row space-between px-1">
             <h1>Shirisha Korukonda Bhattaru</h1>
             <nav>
                 <ul>
