@@ -1,7 +1,7 @@
 import { Link, useLocation } from 'react-router-dom';
 import { useState } from 'react';
 import { capitalizeFirstLetter } from '../../utils/helpers';
-import './Navigation.css';
+//import './Navigation.css';
 
 const Navigation = () => {
     const location = useLocation();
@@ -13,7 +13,7 @@ const Navigation = () => {
 
     return (
         <nav>
-            <ul>
+            <ul className="flex-row">
                 <li className={activeTitle === '/section1' ? 'active' : ''}>
                     <Link
                         to="/section1"
