@@ -2,34 +2,33 @@ import './Portfolio.css';
 const projects = [
     {
         title: 'BookFlix',
-        image: "src/assets/Bookflix.png",
+        image: "/assets/Bookflix.png",
         githubLink: 'https://github.com/JuanGirelli/Bookflix'
     },
     {
         title: 'Bankroll',
-        image: "src/assets/Bankroll.png",
+        image: "/assets/Bankroll.png",
         deployedLink:'https://eslickjr.github.io/Bankroll',
         githubLink: 'https://github.com/eslickjr/Bankroll'
     },
     {
         title: 'Weather-forecast',
-        image: 'src/assets/weather-forecast.png',
+        image: '/assets/weather-forecast.png',
         deployedLink: 'https://weather-forecast-jgsx.onrender.com',
         githubLink: 'https://github.com/Shirishakb/Weather-forecast'
     },
     {
         title: 'Showroom',
-        image: 'src/assets/showroom.jpg',
+        image: '/assets/showroom.jpg',
         deployedLink: 'https://shirishakb.github.io/Showroom',
         githubLink: 'https://github.com/user/project4'
     },
     {
         title: 'Sample Readme Generator',
-        image: 'src/assets/readme.png',
+        image: '/assets/readme.png',
         githubLink: 'https://github.com/Shirishakb/Sample-template-readme-generator'
     },
 ];
-
 const Portfolio = () => {
     return (
         <div className="portfolio">

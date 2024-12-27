@@ -1,7 +1,6 @@
 import { Link, useLocation } from 'react-router-dom';
 import { useState } from 'react';
 import { capitalizeFirstLetter } from '../../utils/helpers';
-//import './Navigation.css';
 
 const Navigation = () => {
     const location = useLocation();
