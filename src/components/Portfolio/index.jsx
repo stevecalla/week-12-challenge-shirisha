@@ -1,11 +1,6 @@
 import './Portfolio.css'; 
 const projects = [
     {
-        title: 'BookFlix',
-        image: "/assets/Bookflix.png",
-        githubLink: 'https://github.com/JuanGirelli/Bookflix'
-    },
-    {
         title: 'Bankroll',
         image: "/assets/Bankroll.png",
         deployedLink:'https://eslickjr.github.io/Bankroll',
@@ -21,12 +16,7 @@ const projects = [
         title: 'Showroom',
         image: '/assets/showroom.jpg',
         deployedLink: 'https://shirishakb.github.io/Showroom',
-        githubLink: 'https://github.com/user/project4'
-    },
-    {
-        title: 'Sample Readme Generator',
-        image: '/assets/readme.png',
-        githubLink: 'https://github.com/Shirishakb/Sample-template-readme-generator'
+        githubLink: 'https://github.com/Shirishakb/Showroom'
     },
 ];
 const Portfolio = () => {

@@ -4,7 +4,7 @@ const About = () => {
             <h1>About Me</h1>
             <div className="about-content">
                 <img 
-                    src="src\assets\aboutimage.jpg" 
+                    src="Assets\aboutimage.jpg" 
                     alt="Developer Avatar" 
                     className="developer-photo"
                 />
