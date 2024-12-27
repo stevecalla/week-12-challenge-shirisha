@@ -1,5 +1,6 @@
 import { removeHyphensAndCapitalize } from '../../utils/helpers';
 import * as projects from '../../assets';
+import PropTypes from 'prop-types';
 
 function Project({ project }) {
   const { name, repo, link, description } = project;
@@ -24,5 +25,13 @@ function Project({ project }) {
     </div>
   );
 }
+Project.propTypes = {
+  project: PropTypes.shape({
+    name: PropTypes.string.isRequired,
+    repo: PropTypes.string.isRequired,
+    link: PropTypes.string.isRequired,
+    description: PropTypes.string.isRequired,
+  }).isRequired,
+};
 
 export default Project;
