@@ -1,4 +1,7 @@
 import './Portfolio.css'; 
+import '../../assets/projects/Bankroll.png';
+import '../../assets/projects/weather-forecast.png';
+import '../../assets/projects/showroom.jpg';
 
 const projects = [
     {
@@ -20,6 +23,7 @@ const projects = [
         githubLink: 'https://github.com/Shirishakb/Showroom'
     },
 ];
+
 const Portfolio = () => {
     return (
         <div className="portfolio">
