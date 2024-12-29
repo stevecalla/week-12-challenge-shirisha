@@ -1,20 +1,21 @@
 import './Portfolio.css'; 
+
 const projects = [
     {
         title: 'Bankroll',
-        image: "/assets/Bankroll.png",
+        image: "../../assets/Bankroll.png",
         deployedLink:'https://eslickjr.github.io/Bankroll',
         githubLink: 'https://github.com/eslickjr/Bankroll'
     },
     {
         title: 'Weather-forecast',
-        image: '/assets/weather-forecast.png',
+        image: '../../assets/weather-forecast.png',
         deployedLink: 'https://weather-forecast-jgsx.onrender.com',
         githubLink: 'https://github.com/Shirishakb/Weather-forecast'
     },
     {
         title: 'Showroom',
-        image: '/assets/showroom.jpg',
+        image: '../../assets/showroom.jpg',
         deployedLink: 'https://shirishakb.github.io/Showroom',
         githubLink: 'https://github.com/Shirishakb/Showroom'
     },
